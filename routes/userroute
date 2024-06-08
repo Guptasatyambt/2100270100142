@@ -1,0 +1,14 @@
+const express = require('express');
+const{handleeven,handlefab ,handlerand,handleprime}=require('../controller/calculatorcontroller')
+
+const router=express.Router();
+
+router.get('/e',handleeven);
+router.get('/f',handlefab)
+router.get('/r',handlerand)
+router.get('/p',handleprime)
+
+
+
+
+module.exports=router
